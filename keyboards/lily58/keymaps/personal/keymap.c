@@ -121,10 +121,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   )
 };
 
-layer_state_t layer_state_set_user(layer_state_t state) {
-    state = update_tri_layer_state(state, _RAISE, _LOWER, _ADJUST);
-    return state;
-}
+// layer_state_t layer_state_set_user(layer_state_t state) {
+//     state = update_tri_layer_state(state, _RAISE, _LOWER, _ADJUST);
+//     return state;
+// }
 
 //SSD1306 OLED update loop, make sure to enable OLED_ENABLE=yes in rules.mk
 #ifdef OLED_ENABLE
